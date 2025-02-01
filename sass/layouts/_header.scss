@@ -1,0 +1,33 @@
+@use "../abstract";
+
+.header {
+  height: 95dvh;
+  text-align: center;
+  background: linear-gradient(
+      to right bottom,
+      rgba(abstract.$color-primary-light, 0.8),
+      rgba(abstract.$color-primary-dark, 0.8)
+    ),
+    url(../../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative;
+
+  .logo-container {
+    width: 3.5rem;
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    .logo {
+      width: 100%;
+    }
+  }
+
+  &__info {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    translate: -50% -50%;
+  }
+}

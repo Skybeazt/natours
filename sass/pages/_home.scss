@@ -1,0 +1,7 @@
+@use "../abstract";
+
+.section-about {
+  padding-block: 25rem;
+  background-color: abstract.$color-gray-light-1;
+  margin-top: -20rem;
+}

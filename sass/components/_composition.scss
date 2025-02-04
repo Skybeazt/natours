@@ -1,0 +1,41 @@
+@use "../abstract";
+
+.composition {
+  position: relative;
+
+  &:hover > &__photo:not(:hover) {
+    scale: 0.95;
+  }
+
+  &__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(abstract.$color-black, 0.4);
+    position: absolute;
+    border-radius: 2px;
+    outline-offset: 2rem;
+    transition: all 300ms ease-out;
+
+    &:hover {
+      scale: 1.05;
+      z-index: 5;
+      box-shadow: 0 2.5rem 4rem rgba(abstract.$color-black, 0.5);
+      outline: 1.5rem solid abstract.$color-primary;
+      translate: 0 0.5rem;
+    }
+
+    &--p1 {
+      top: -2rem;
+      left: 0;
+    }
+
+    &--p2 {
+      right: 0rem;
+      top: 2rem;
+    }
+
+    &--p3 {
+      left: 20%;
+      top: 10rem;
+    }
+  }
+}

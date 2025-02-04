@@ -14,17 +14,18 @@
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
 
-  .logo-container {
-    width: 3.5rem;
+  &__logo-box {
+    height: 3.5rem;
     position: absolute;
     top: 4rem;
     left: 4rem;
-    .logo {
-      width: 100%;
-    }
   }
 
-  &__info {
+  &__logo {
+    height: 100%;
+  }
+
+  &__text-box {
     position: absolute;
     top: 40%;
     left: 50%;

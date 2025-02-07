@@ -36,6 +36,15 @@
     }
   }
 
+  &--green {
+    color: abstract.$color-white;
+    background-color: abstract.$color-primary;
+
+    &::after {
+      background-color: abstract.$color-primary;
+    }
+  }
+
   &:hover {
     box-shadow: 0 1rem 2rem rgba(abstract.$color-black, 0.2);
     translate: 0 -3px;
